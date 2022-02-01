@@ -1,0 +1,58 @@
+:root{
+    /*Color Scheme*/
+    --main-bg-color: #ddddee;
+    --secondary-bg-color: #4d9b97;
+    --header-text-color: #E0CF81;
+    --section-text-color: #CBBD9D;
+    --hover-text-color: white;
+    --main-accent-color: #776659;
+
+    /*Font Sizes*/
+    --header-text-size: 17px;
+    --section-text-size: 12px;
+}
+
+* {
+    background-color: var(--main-bg-color);
+}
+
+/*Body Styling*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Body Title / Dev Name*/
+.body-title{
+    display: block;
+    margin-right: 2rem;
+    width: 15rem;
+    padding: .4rem 1.25rem;
+    z-index: 2;
+    background-color: var(--secondary-bg-color);
+    color: rgb(21, 35, 56);
+}
+
+/*Nav-Bar*/
+.topnav {
+    background-color: rgb(21, 35, 56);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a {
+    float: left;
+    color: var(--secondary-bg-color);
+    background-color: rgb(21, 35, 56);
+    text-align: center;
+    padding: 1em 2em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: var(--secondary-bg-color);
+    color: var(--hover-text-color);
+}
+  
