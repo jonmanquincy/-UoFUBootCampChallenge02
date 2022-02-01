@@ -6,6 +6,7 @@
     --section-text-color: #CBBD9D;
     --hover-text-color: white;
     --main-accent-color: #776659;
+    --bold-background-color: rgb(21, 35, 56);
 
     /*Font Sizes*/
     --header-text-size: 17px;
@@ -31,7 +32,7 @@ body{
     padding: .4rem 1.25rem;
     z-index: 2;
     background-color: var(--secondary-bg-color);
-    color: rgb(21, 35, 56);
+    color: var(--bold-background-color);
 }
 
 /*Nav-Bar*/
@@ -45,7 +46,7 @@ body{
 .topnav a {
     float: left;
     color: var(--secondary-bg-color);
-    background-color: rgb(21, 35, 56);
+    background-color: var(--bold-background-color);
     text-align: center;
     padding: 1em 2em;
     font-size: 20px;
@@ -64,20 +65,81 @@ body{
     background-image: url("./Images/52824017-green-retro-chalkboard-background-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    position: relative;
 }
 
+.hero-form h1{
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    padding: 1rem 2rem;
+    background-color: var(--bold-background-color);
+    color: var(--secondary-bg-color);
+}
 /* Project Styling*/
 .projects {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     float: right;
+    margin: 1rem 4rem; 
 }
 
-.project {
-    border-left: 5px solid #4d9b97;
+.project { 
     margin: 1rem 0;
     padding-top: 1rem;
     padding-left: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.project h2{
+    text-align: right;
+    border-right: 5px solid #4d9b97;
+    margin: 0;
+    padding-right: 1rem;
+    text-align: start;
+    color: var(--main-accent-color);
+    font-size: 35px;
+    width: fit-content;
+    min-height: 10rem;
+}
+
+.project a{
+    width: 80%;
+    padding-left: 1rem;
+    height: 36rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.project a:hover{
+    opacity: 0.5;
+}
+
+.project-box-title{
+    padding: 3rem;
+    width: 25%;
+    margin: 1rem 0 0 0;
+    font-size: 26px;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 10px 5px 5px black;
+    color: var(--main-bg-color);
+    align-self: baseline;
+    text-align: center;
+}
+
+/* Unique Backgrounds Per Project */
+#React a{
+    background-image: url("./Images/PGD-screen-snip.png");
+}
+
+#Net a{
+    background-image: url("./Images/stray-pixel-screen-snip.png");
+}
+
+#Java a{
+    background-image: url("./Images/HeroHomepage_2880x1200.max-1000x1000.jpg");
 }
